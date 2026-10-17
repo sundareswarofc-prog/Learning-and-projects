@@ -1,0 +1,53 @@
+* HTTP:(Hyper text Transfer Protocal)
+  This is used to make a set of rules to communicate between the client and the server.
+
+* Parts of HTTP:
+  Method - get,post,put,patch,delete
+  URL    - "http/..."
+  Header - Contains some additional info (authorization, content-type)
+  body   - {name:"sarath",age:21}
+
+* Methods:
+  Get    - to read the data
+  Put    - replace the existing data.
+  Post   - Create a new data.
+  Patch  - Change any values in the existing data ({age:21 to age:31})
+  delete - delete a existing data
+
+* HTTP status codes:
+
+        2xx
+        
+        Success
+        - 200 OK — request succeeded.
+        - 201 Created — a resource was created.
+        - 204 No Content — succeeded with no response body.
+        
+        3xx
+        
+        Redirection
+        - 301 Moved Permanently
+        - 302 Found
+
+        4xx
+        
+        Client-side request problem
+        - 400 Bad Request — invalid request.
+        - 401 Unauthorized — authentication is missing or invalid.
+        - 403 Forbidden — not permitted.
+        - 404 Not Found — resource not found.
+        - 409 Conflict — conflict with current resource state.
+        
+        5xx
+        
+        Server-side problem
+        - 500 Internal Server Error — unexpected server failure.
+        - 502 Bad Gateway — invalid response from an upstream server.
+        - 503 Service Unavailable — service temporarily unavailable.
+
+* Headers
+   
+   - Content-Type: application/json
+   - Accept: application/json
+   - Authorization: Bearer your_token
+
