@@ -1,0 +1,18 @@
+PIP commands
+  - pip install (packagename)
+  - pip install (packagename == versionnumber)
+  - pip uninstall (packagename)
+  - pip list [.........list the dependencies in readable table  .........]
+  - pip show (package name) [.............Display package information...............]
+  - pip freeze [........... list the packages in text with version...............]
+  - pip freeze > requirements.txt [................. this will create a requirement file that contains dependencies ...............]
+  - pip install -r requirements.txt[................this will install all the needed dependency (similar to "npm i")]
+
+
+	                requirements.txt	             pyproject.toml
+What it is	          List of packages	                 Project config file
+Contains	            Only packages	                       Name, version, dependencies, build info, tool settings
+Created by	          pip freeze or by hand	             By hand (or tools like Poetry/uv)
+Versions	             Usually exact (==)	                 Usually flexible (>=)
+Install	pip           install -r requirements.txt        pip install .
+Needed for	          Moving or deploying an app         Building and publishing a library
