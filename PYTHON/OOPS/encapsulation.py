@@ -30,8 +30,12 @@ class Person:
     def age(self,age):
         self.__age=age
 
+
+
 p1=Person(21)
 print(p1.age)
+
+print(p1._Person__age)
 
 p1.age=31
 print(p1.age)

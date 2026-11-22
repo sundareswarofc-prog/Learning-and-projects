@@ -17,6 +17,8 @@ class Parent_Class:
 class Child_Class(Parent_Class):
     def __init__(self,name,age,nickname):
         super().__init__(nickname)
+            #  (or)
+        # Parent_Class.__init__(self,nickname)
         self.age=age
         self.name=name
         # Parent_Class.__init__(self,name)
