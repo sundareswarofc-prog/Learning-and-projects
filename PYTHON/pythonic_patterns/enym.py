@@ -74,3 +74,7 @@ max(words, key=len)     # 'banana'
 min(words, key=len)     # 'kiwi'
 
 max([], default=0)      # avoids an error on empty input
+
+import sys
+
+print(sys._is_gil_enabled())
