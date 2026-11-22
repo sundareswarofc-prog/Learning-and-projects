@@ -1,0 +1,4 @@
+Python is a programming language.
+FastAPI is a Python framework.
+ChromaDB stores embeddings.
+RAG retrieves documents and generates answers.
